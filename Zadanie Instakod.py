@@ -4,7 +4,7 @@ imie = input('Podaj swoje Imię: ')
 print('Cześć ', imie,
       '. Miło cię poznać, zagrasz teraz w grę, w której Twoim zadaniem będzie zgadnąć o jakiej liczbie od 1 do 100 myśli komputer')
 
-print('W takim razie zaczynajmy')
+print('W takim razie zaczynajmy!')
 
 gra = 'Tak'
 
