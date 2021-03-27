@@ -14,3 +14,8 @@ while y != 'Nie':
     else:
         print('Reszka')
     y = input('czy chcesz wylosować jeszcze raz odpowiedz Tak/Nie')
+    if y != 'Nie':
+        if y != 'Tak':
+            y = 'Nie'
+
+print('do zobaczenia następnym razem')
