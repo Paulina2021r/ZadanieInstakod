@@ -1,5 +1,6 @@
 import random
 
+
 imie = input('Podaj swoje Imię: ')
 print('Cześć ', imie,
       '. Miło cię poznać, zagrasz teraz w grę, w której Twoim zadaniem będzie zgadnąć o jakiej liczbie od 1 do 100 myśli komputer')
@@ -7,6 +8,7 @@ print('Cześć ', imie,
 print('W takim razie zaczynajmy!')
 
 gra = 'Tak'
+
 
 while gra != 'Nie':
     liczba = random.randint(1, 100)
@@ -16,7 +18,7 @@ while gra != 'Nie':
     while x != liczba:
         if x < liczba:
             x = int(input('Podaj większą liczbę: '))
-            liczba_prob += 1
+            liczba_prob += 1  # można to zapisać liczba_prob = liczba_prob + 1
         if x > liczba:
             x = int(input('Podaj mniejszą liczbę: '))
             liczba_prob += 1
@@ -25,4 +27,13 @@ while gra != 'Nie':
         print('Brawo zgadłeś, ta liczba to: ', x, '. Zgadłeś w ', liczba_prob, 'próbach')
         gra = input('Czy chcesz zagrać jeszcze raz, wybierz Tak/Nie ')
 
-print('Miło było zagrać do zobaczenia następnym razem')
+    #if gra != 'Nie' or gra != 'Tak':
+        #gra = 'Nie'
+
+
+print('Miło było zagrać do zobaczenia następnym razem!')
+
+
+
+
+
